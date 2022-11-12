@@ -36,10 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 this.startActivity( insertIntent );
                 return true;
             case R.id.action_delete:
+                Intent deleteIntent = new Intent( this, DeleteActivity.class );
+                this.startActivity( deleteIntent );
                 Log.w( "MainActivity", "Delete selected" );
                 return true;
             case R.id.action_update:
                 Log.w( "MainActivity", "Update selected" );
+                return true;
+            case R.id.action_exit:
+                Log.w( "MainActivity", "Exit selected" );
+                this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected( item );
