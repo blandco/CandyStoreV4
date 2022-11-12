@@ -8,8 +8,8 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 //Concept borrowed from Hervé J. Franceschi
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
