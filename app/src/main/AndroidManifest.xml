@@ -33,6 +33,11 @@
             android:name="com.joelbland.candystore.DeleteActivity"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name="com.joelbland.candystore.UpdateActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

@@ -2,12 +2,10 @@ package com.joelbland.candystore;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 //Concept borrowed from Hervé J. Franceschi
 
 public class MainActivity extends AppCompatActivity {
@@ -31,20 +29,18 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId( );
         switch ( id ) {
             case R.id.action_add:
-                Log.w( "MainActivity", "Add selected" );
                 Intent insertIntent = new Intent( this, InsertActivity.class );
                 this.startActivity( insertIntent );
                 return true;
             case R.id.action_delete:
                 Intent deleteIntent = new Intent( this, DeleteActivity.class );
                 this.startActivity( deleteIntent );
-                Log.w( "MainActivity", "Delete selected" );
                 return true;
             case R.id.action_update:
-                Log.w( "MainActivity", "Update selected" );
+                Intent updateIntent = new Intent( this, UpdateActivity.class );
+                this.startActivity( updateIntent );
                 return true;
             case R.id.action_exit:
-                Log.w( "MainActivity", "Exit selected" );
                 this.finish();
                 return true;
             default:
